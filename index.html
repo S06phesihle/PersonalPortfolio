@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="images/logo.jpeg" alt="Sphesihle">
+            </div>
+            <nav>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>                
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>                      
+                </ul>
+            </nav>
+        </header>
+    
+        <div id="header" class="hero">
+
+            <div class="container hero-content">
+                <div class="header-text">                    
+                    <h1 class="title">
+                        Hello, I'm <span class="name">Siphesihle</span><br>Mkhize
+                    </h1>
+                    <p>I am a Junior aspiring Full-Stack developer with a strong passion for Virtual Reality(VR) Development. I've
+                        been exposed to creating immersive virtual environments using Unity engine, where I focus on developing engaging
+                        and interactive VR experiences. In addition to my VR work, I have experienced with a variety of programming 
+                        languages, including HTML, CSS, JavaScript, Python and C#.                        
+                    </p>
+                </div>
+            </div> 
+            <div class="social-icons-container">
+                <p class="social-title">Connect with me</p>
+                <div class="social-icons1">
+                    <a href="#"><i class="fab fa-twitter-"></i></a>
+                    <a href="https://www.instagram.com/sphe__mkhize" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/Siphesihle Mkhize" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/S06phesihle" target="_blank"><i class="fab fa-github"></i></a>
+                </div> 
+            </div>                                  
+        </div>
+
+    <!-- ---------------about---------- -->
+    
+    <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm a passionate VR developer with experience in creating virtual environments. I specialize in
+                    Unity engine, developing engaging and interactive VR experience various platforms. With a strong
+                    background in programming and design. I tend to bring creative solutions to complex challenges.
+                    Let's build the future of virtual reality!</p>
+
+                    <div class="table-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>VR Developer</span><br>Designing interactive virtual environments</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2023</span><br>UI/UX Design for a Hotel Management System</li>
+                            <li><span>2024 - Current</span><br>EduMatch Web application<br>HealthDesk mobile application<br>
+                            VR Development<br>Internship at Lead HR Consulting</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2020</span><br>National Senior Certificate</li>
+                            <li><span>2023</span><br>Diploma In ICT Applications Development</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- ---------------portfolio---------- -->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/community.png.jpeg">
+                    <div class="layer">
+                        <h3>Community Engagement Project</h3>
+                        <p>We showcased various projects from the 4IR Lab of Excellence, and I was responsible for presenting
+                            our work on virtual reality(VR).</p>
+                        <a href="#" class="btn" onclick="showProjectDetails('project1', event)"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/RoyalBirds Hotel.jpeg">
+                    <div class="layer">
+                        <h3>Website Interface Design for Royal Birds Hotel</h3>
+                        <p>Designed a user-friendly and visually appealing website interface for Royal Birds Hotel.</p>
+                        <a href="#" class="btn" onclick="showProjectDetails('project2', event)"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>                    
+                </div>
+                <div class="work">
+                    <img src="images/VR headset.jpg"> 
+                    <div class="layer">
+                        <h3>Tech Week Participation- School Innovation Showcase 2024</h3>
+                        <p>During the 2024 Tech Week at Durban University of Technology, I showcased our ongoing VR project as part 
+                            of a series of technology-focused events aimed at fostering innovation and collaboration. This experience 
+                            allowed me to engage with emerging technologies and apply cutting-edge tech skills in a practical setting. 
+                            The following video provides more details.</p>
+                        <a href="#" class="btn" onclick="showProjectDetails('project4', event)"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>                                     
+                </div>
+                <div class="work hidden-project">
+                    <img src="images/Virtual Reality.png"> 
+                    <div class="layer">
+                        <h3>Virtual Reality</h3>
+                        <p>This video showcases our VR project visualizing the 4IR LAB of Excellence using Unity technology.</p>
+                        <a href="#" class="btn" onclick="showProjectDetails('project3', event)"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>                                     
+                </div>
+                <div class="work hidden-project">   <!----------One of the hidden projects--------->
+                    <img src="images/Virtual Reality.png"> 
+                    <div class="layer">
+                        <h3>Virtual Reality</h3>
+                        <p>This video showcases our VR project visualizing the 4IR LAB of Excellence using Unity technology.</p>
+                        <a href="#" class="btn" onclick="showProjectDetails('project3', event)"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>                                     
+                </div>                
+            </div>
+           <a href="#" class="view-more-btn">See more</a>
+            <!---------------project details in the portfolio---------->
+            <div id="project-details" class="project-details" style="display: none;">
+                <div class="project-details-content">
+                    <span class="close-btn" onclick="hideProjectDetails()">&times;</span>
+                    <div class="project-details-wrapper">
+                        <div class="project-image">
+                            <img id="project-image" src="" alt="Project Image">
+                        </div>
+                        <div class="project-info">
+                            <h2 id="project-title"></h2>
+                            <p id="project-description"></p>                          
+                        </div>
+                    </div>
+                    <div class="project-video">
+                        <video id="project-video" controls>
+                            <source id="project-video-src" src="" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="like-container">
+                        <button id="like-button" onclick="increaseLikes()">
+                            <i class="fas fa-thumbs-up"></i> Like
+                        </button>
+                        <span id="like-counter">0</span>Like
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     <!---------------contact---------->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> sphesihle.mkhize0610@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 076 472 7893</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Durban, Ritson Campus</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter-"></i></a>
+                        <a href="https://www.instagram.com/sphe__mkhize" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/Siphesihle Mkhize" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/S06phesihle" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                    <a href="images/Siphesihle Mkhize Resume.pdf" download class="download-btn">Download CV</a> <!-----------Upload any file------>
+                </div>
+                <div class="contact-right">
+                    <form id="contactForm" class="contact-right">
+                        <div class="form-group">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                        </div> 
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @Sphesihle. Made in the <i class="fas fa-heart"></i> 4IR Lab.</p>
+        </div>
+     </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        let likeCount = 0;
+        function increaseLikes() {
+            likeCount++;
+            document.getElementById('like-counter').textContent = likeCount;
+        }           
+        
+
+        function showProjectDetails(projectId, event) {
+
+            event.preventDefault();
+            event.stopPropagation();
+    const projects = {
+        'project1': {
+            title: "Community Engagement Project",
+            description: "This project was focused on showcasing the different initiatives being undertaken in the 4IR Lab. I was responsible for highlighting the VR component, which was used to engage the community and provide an immersive experience. The goal was to demonstrate the potential of emerging technologies in addressing community needs and fostering engagement.",
+            image: "images/community.png.jpeg"
+        },
+        'project2': {
+            title: "UI/UX Design and Implementation",
+            description: "I took part in the design and implementation of the UI/UX for the Royal Birds Hotel website. The focus was on creating an intuitive and visually appealing interface that enhances user experience.",
+            image: "images/RoyalBirds Hotel.jpeg"
+        },
+        'project3': {                        
+            videoSrc: "images/IMG_0787.MOV"
+        },
+        'project4': {                        
+            videoSrc: "images/IMG_0779.MOV"
+        }
+    };
+
+    const project = projects[projectId];
+    if (project) {
+        document.getElementById('project-title').textContent = project.title;
+        document.getElementById('project-description').textContent = project.description;
+
+        const imageElement = document.getElementById('project-image');
+        const videoElement = document.getElementById('project-video');
+
+        if(projectId == 'project3'){
+            imageElement.src = project.image;
+            imageElement.style.display = 'block';
+            videoElement.style.display = 'none';
+
+            imageElement.onclick = function(){
+                imageElement.style.display = 'none';
+                videoElement.style.display = 'block';
+                videoElement.src = project.videoSrc;
+                videoElement.play();
+            };
+
+            videoElement.onclick = function(){
+                videoElement.pause();
+                videoElement.currentTime = 0;
+                videoElement.style.display = 'none';
+                imageElement.style.display = 'block';
+            };           
+        }
+        else {
+                if(project.image){
+                    imageElement.src = project.image;
+                    imageElement.style.display = 'block';
+                    videoElement.style.display = 'none';
+                }
+            }
+
+        if(project.image){
+            imageElement.src = project.image;
+            imageElement.style.display = 'block';
+            videoElement.style.display = 'none';
+        } 
+        else if(project.videoSrc){
+            const videoSource = document.getElementById('project-video-src');
+            videoSource.src = project.videoSrc;
+            videoElement.load();
+            videoElement.style.display = 'block';
+            imageElement.style.display = 'none';
+        }
+
+        document.getElementById('project-details').style.display = 'flex';        
+    }
+}
+
+function hideProjectDetails() {
+    document.getElementById('project-details').style.display = 'none';
+
+    const video = document.getElementById('project-video');
+    video.pause();
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleButton = document.querySelector('.view-more-btn');
+    const hiddenProjects = document.querySelectorAll('.hidden-project');
+
+    toggleButton.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default anchor behavior
+
+        // Check the current state of the hidden projects
+        const areProjectsHidden = Array.from(hiddenProjects).some(project => project.style.display === 'none' || project.style.display === '');
+
+        if (areProjectsHidden) {
+            // Show all hidden projects
+            hiddenProjects.forEach(function(project) {
+                project.style.display = 'block';
+            });
+            toggleButton.textContent = 'See Less';
+        } else {
+            // Hide the projects again
+            hiddenProjects.forEach(function(project) {
+                project.style.display = 'none';
+            });
+            toggleButton.textContent = 'See More';
+        }
+    });
+});
+
+const form = document.getElementById('contactForm');
+
+function showAlert(message, isSuccess) {
+    const alertDiv = document.createElement('div');
+    alertDiv.className = `alert ${isSuccess ? 'alert-success' : 'alert-error'}`;
+    alertDiv.textContent = message;
+    document.body.appendChild(alertDiv);
+
+    alertDiv.onclick = function() {
+        document.body.removeChild(alertDiv);
+    };
+}
+
+form.addEventListener('submit', handleSubmit);
+
+async function handleSubmit(event) {
+    event.preventDefault();
+    const formData = new FormData(form);
+    
+    try {
+        const response = await fetch('https://formspree.io/f/mwpeywbq', {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+        
+        if (response.ok) {
+            showAlert("Thanks for your submission!", true);
+            form.reset();
+        } else {
+            throw new Error('Form submission failed');
+        }
+    } catch (error) {
+        showAlert("Sorry! There was a problem submitting your form", false);
+        console.error('Error:', error);
+    }
+}
+
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('nav ul');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+});
+    </script>
+   </body>
+</html>
