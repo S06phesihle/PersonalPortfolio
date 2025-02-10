@@ -71,7 +71,7 @@
                     <div class="table-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('Experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('EducationAchievements')">Education & Achievements</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
@@ -82,14 +82,20 @@
                     <div class="tab-contents" id="Experience">
                         <ul>
                             <li><span>2023</span><br>UI/UX Design for a Hotel Management System</li>
-                            <li><span>2024 - Current</span><br>EduMatch Web application<br>HealthDesk mobile application<br>
-                            VR Development<br>Internship at Lead HR Consulting</li>
+                            <li><span>2024 - Current</span><br>EduMatch Web application<br>HealthDesk Mobile application<br>
+                            VR Development<br>Internship at Lead HR Consulting<br>Robot Process Automation</li>
                         </ul>
                     </div>
-                    <div class="tab-contents" id="Education">
+                    <div class="tab-contents" id="EducationAchievements">
                         <ul>
                             <li><span>2020</span><br>National Senior Certificate</li>
                             <li><span>2023</span><br>Diploma In ICT Applications Development</li>
+                        </ul>
+
+                        <h3>Achievements</h3>
+                        <ul>
+                            <li><span>Top Achiever</span><br>BRICS World Skills competition - RPA</li>
+                            <li><span>Certificate of Achivement</span><br>Engineering Practice Innovation Project - EPIP</li>
                         </ul>
                     </div>
             </div>
@@ -138,14 +144,17 @@
                         <a href="#" class="btn" onclick="showProjectDetails('project3', event)"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>                                     
                 </div>
-                <div class="work hidden-project">   <!----------One of the hidden projects--------->
-                    <img src="images/Virtual Reality.png"> 
+               <!---- <div class="work hidden-project">   ---------One of the hidden projects--------
+                    <img src="images/graduation.png.jpeg"> 
                     <div class="layer">
-                        <h3>Virtual Reality</h3>
-                        <p>This video showcases our VR project visualizing the 4IR LAB of Excellence using Unity technology.</p>
-                        <a href="#" class="btn" onclick="showProjectDetails('project3', event)"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>Robot Process Automation</h3>
+                        <p>This Robot Process Automation (RPA) application automates the generation and processing of invoices using Python. 
+                        The application eliminates repetitive manual tasks by extracting data from invoices, performing calculations, and 
+                        ensuring accuracy through validation checks.</p>
+                        <a href="#" class="btn" onclick="showProjectDetails('project5', event)"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>                                     
-                </div>                
+                </div>  -->  
+
             </div>
            <a href="#" class="view-more-btn">See more</a>
             <!---------------project details in the portfolio---------->
@@ -252,11 +261,19 @@
             description: "I took part in the design and implementation of the UI/UX for the Royal Birds Hotel website. The focus was on creating an intuitive and visually appealing interface that enhances user experience.",
             image: "images/RoyalBirds Hotel.jpeg"
         },
-        'project3': {                        
+        'project3': {
+            title:"VR Development",
+            description:"Video snippet showcasing the Virtual reality space of the 4IR lab of Excellence (DUT)",                        
             videoSrc: "images/IMG_0787.MOV"
         },
         'project4': {                        
             videoSrc: "images/IMG_0779.MOV"
+        },
+        'project5': { 
+            title: "Brics World Skills Innovation",
+            description: "As part of the BRICS World Skills Innovation competition, our team worked on developing a Robot Process Automation (RPA) solution aimed at automating business processes. We successfully applied RPA technology to enhance operational efficiency, which was recognized as one of the top achievements in the competition",
+            image: "images/RoyalBirds Hotel.jpeg"                       
+            
         }
     };
 
