@@ -307,37 +307,42 @@ nav ul li a:hover::after{
 }
 
 /*-----------portfolio-----------*/
-#portfolio{
+#portfolio {
     padding: 50px 0;
     background-color: #3c3e41;
 }
 
-.work-list{
+.work-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Medium-sized blocks */
+    grid-gap: 30px; /* Smaller gap between items */
     margin-top: 50px;
+    max-width: 1200px;
+    width: 100%;
 }
-.work{
+
+.work {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     background-color: #4a4a4a;
+    height: 350px;
 }
 
-.work img{
+.work img {
     width: 100%;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s ease;
+    object-fit: cover;
 }
 
-.layer{
+.layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), #ff004f);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), #ff6600 );
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -354,21 +359,22 @@ nav ul li a:hover::after{
     color: #fff;
 }
 
-.layer h3{
+.layer h3 {
     font-weight: 600;
     margin-bottom: 20px;
     font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
 .layer p {
     opacity: 0.9;
     line-height: 1.6;
 }
 
-.layer a{
+.layer a {
     margin-top: 20px;
-    color: #ff004f;
+    color: #e65c00;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -380,19 +386,21 @@ nav ul li a:hover::after{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: background 0.3s ease, color 0.3s ease;
 }
+
 .layer a:hover {
-    background-color: #ff004f;
+    background-color: #e65c00;
     color: #fff;
 }
-.work:hover img{
+
+.work:hover img {
     transform: scale(1.1);
 }
 
-.work:hover .layer{
+.work:hover .layer {
     height: 100%;
 }
 
-.project-details{
+.project-details {
     position: fixed;
     top: 0;
     left: 0;
@@ -407,79 +415,65 @@ nav ul li a:hover::after{
     box-sizing: border-box;
 }
 
-.project-details-content{
+.project-details-content {
     background-color: #fff;
     padding: 30px;
     border-radius: 10px;
     max-width: 800px;
     width: 100%;
     position: relative;
-    color: #333;    
+    color: #333;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     text-align: left;
     overflow-y: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);   
-    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.project-details-wrapper{
+
+.project-details-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
-.project-image, .project-video{
+
+.project-image, .project-video {
     margin-bottom: 20px;
 }
-.project-image img, .project-video video{
+
+.project-image img, .project-video video {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.project-image{
+
+.project-image {
     flex: 0 0 45%;
     max-width: 45%;
     padding-right: 20px;
 }
 
-.project-image img{
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.close-btn{
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 30px;
-    color: #333;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-.close-btn:hover {
-    color: #ff004f;
-}
-
-.project-info{
+.project-info {
     flex: 0 0 45%;
     max-width: 45%;
-    padding: 20px;  
+    padding: 20px;
 }
+
 .project-info h2 {
     font-size: 16px;
     margin-bottom: 20px;
     color: #ff004f;
     text-transform: uppercase;
 }
+
 .project-info p {
     font-size: 16px;
     line-height: 1.8;
     color: #555;
 }
+
 .close-btn {
     position: absolute;
     top: 20px;
@@ -489,55 +483,70 @@ nav ul li a:hover::after{
     cursor: pointer;
     transition: color 0.3s ease;
 }
-.btn{
+
+.close-btn:hover {
+    color: #ff004f;
+}
+
+/* Ensures all works are visible, no need for "see more" button */
+.work.hidden-project {
+    display: block;
+}
+
+/* Styling for buttons */
+.btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto; 
-    border: 1px solid #ff004f;
+    margin: 0 auto;
+    border: 1px solid #e65c00;
     padding: 14px 50px;
-    border-radius: 50%; 
+    border-radius: 50%;
     text-decoration: none;
-    color: #ff004f;
+    color: #ff6600;
     font-weight: bold;
     transition: background 0.5s ease, color 0.5s ease;
     text-align: center;
     text-transform: uppercase;
-    width: 60px; 
-    height: 60px; 
-    line-height: 60px; 
-    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #e65c00;
 }
 
-.btn:hover{
-    background: grey;
-    color: #ff004f;
+.btn:hover {
+    background: #e65c00;
+    color: #e65c00;
 }
-.view-more-btn{
+
+.view-more-btn {
     display: inline-block;
     margin: 50px auto;
-    border: 1px solid #ff004f;
+    border: 1px solid #e65c00;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: #ff004f;
+    color: #e65c00;
     font-weight: bold;
     transition: background 0.5s ease, color 0.5s ease;
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
 }
-.view-more-btn:hover{
-    background: #ff004f;
-    color: #fff;
+
+.view-more-btn:hover {
+    background: #e65c00;
+    color: #e65c00;
 }
-.like-container{
+
+.like-container {
     margin-top: auto;
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
-#like-button{
+
+#like-button {
     margin-top: 20px;
     padding: 10px 20px;
     background-color: #ff004f;
@@ -548,20 +557,56 @@ nav ul li a:hover::after{
     font-size: 16px;
     transition: background-color 0.3s ease;
 }
-#like-button:hover{
+
+#like-button:hover {
     background-color: #ff6b81;
 }
-#like-button i{
+
+#like-button i {
     margin-right: 5px;
 }
-#like-counter{
+
+#like-counter {
     margin-left: 10px;
     font-size: 16px;
     color: #2f3542;
 }
-.hidden-project{
+
+.hidden-project {
     display: none;
 }
+/* ------------------ Align buttons side by side ------------------ */
+.button-container {
+    display: flex;
+    gap: 20px; /* Space between the buttons */
+    justify-content: center; /* Centers the buttons horizontally */
+    align-items: center; /* Centers the buttons vertically */
+}
+
+.btn, .github-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e65c00;
+    padding: 14px 50px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #e65c00;
+    font-weight: bold;
+    transition: background 0.5s ease, color 0.5s ease;
+    text-align: center;
+    text-transform: uppercase;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #fff;
+}
+
+.btn:hover, .github-btn:hover {
+    background: #e65c00;
+    color: #fff;
+}
+
 /*---------------------contact--------------*/
 .contact-left{
     flex-basis: 35%;
@@ -667,24 +712,7 @@ form .btn2{
 #status{
     margin-top: 1rem;
 }
-.alert{
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 15px;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    z-index: 1000;
-}
-.alert-success{
-    background-color: #ff004f;
-}
-.alert-error{
-    background-color: #ff004f;
-}
+
 .copyright{
     width: 100%;
     text-align: center;
@@ -693,25 +721,5 @@ form .btn2{
     font-weight: 300;
     margin-top: 20px;
 }
-.github-btn {
-    display: inline-flex;
-    align-items: center;
-    background-color: white;
-    color: white;
-    padding: 8px 12px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s;
-}
 
-.github-btn:hover {
-    background-color: #0366d6;
-}
-
-.github-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 8px;
-}
 
