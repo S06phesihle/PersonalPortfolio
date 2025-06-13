@@ -202,7 +202,7 @@ nav ul li a:hover::after{
 .social-icons-container{
     position: absolute;
     bottom: 40px;
-    left: 80px;
+    left: 10%;
     z-index: 1000;    
 }
 .social-title{
